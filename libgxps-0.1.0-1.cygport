@@ -1,0 +1,16 @@
+inherit gnome2
+
+DESCRIPTION="GNOME OpenXPS library"
+
+DEPEND="gnome-common gtk-doc
+	pkgconfig(cairo)
+	pkgconfig(freetype2)
+	pkgconfig(glib-2.0)
+	pkgconfig(libarchive)
+	libjpeg-devel
+	libtiff-devel"
+
+PKG_NAMES="${PN}1 ${PN}-devel girepository-GXPS0.1"
+libgxps1_CONTENTS="usr/bin/cyggxps-1.dll usr/share/doc/"
+libgxps_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/"
+girepository_GXPS0_1_CONTENTS="usr/*/gir*/GXPS-0.1.*"

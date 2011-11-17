@@ -1,0 +1,6 @@
+category: Gnome
+requires: libgxps1 libarchive-devel libcairo-devel libfreetype-devel libglib2.0-devel libjpeg-devel libtiff-devel
+external-source: libgxps
+sdesc: "GNOME OpenXPS library (development)"
+ldesc: "libgxps is a GObject based library for handling and rendering XPS
+documents."

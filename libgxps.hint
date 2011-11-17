@@ -1,0 +1,4 @@
+category: Gnome
+sdesc: "GNOME OpenXPS library (sources)"
+ldesc: "libgxps is a GObject based library for handling and rendering XPS
+documents."
