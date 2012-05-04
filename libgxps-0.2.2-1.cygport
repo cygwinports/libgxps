@@ -10,7 +10,10 @@ DEPEND="gnome-common gtk-doc
 	libjpeg-devel
 	libtiff-devel"
 
-PKG_NAMES="${PN}1 ${PN}-devel girepository-GXPS0.1"
-libgxps1_CONTENTS="usr/bin/cyggxps-1.dll usr/share/doc/"
+PKG_NAMES="${PN} ${PN}2 ${PN}-devel girepository-GXPS0.1"
+libgxps_CONTENTS="usr/bin/*.exe usr/share/doc/"
+libgxps2_CONTENTS="usr/bin/cyggxps-2.dll"
 libgxps_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/"
 girepository_GXPS0_1_CONTENTS="usr/*/gir*/GXPS-0.1.*"
+
+KEEP_LA_FILES="none"
