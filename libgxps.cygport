@@ -1,6 +1,12 @@
 inherit gnome2
 
-DESCRIPTION="GNOME OpenXPS library"
+NAME="libgxps"
+VERSION=0.2.2
+RELEASE=2
+CATEGORY="Gnome"
+SUMMARY="GNOME OpenXPS library"
+DESCRIPTION="libgxps is a GObject based library for handling and rendering XPS
+documents."
 
 DEPEND="gnome-common gtk-doc
 	pkgconfig(cairo)
@@ -11,9 +17,13 @@ DEPEND="gnome-common gtk-doc
 	libtiff-devel"
 
 PKG_NAMES="${PN} ${PN}2 ${PN}-devel girepository-GXPS0.1"
+libgxps_SUMMARY="OpenXPS document converters"
 libgxps_CONTENTS="usr/bin/*.exe usr/share/doc/"
+libgxps2_SUMMARY="${SUMMARY} (runtime)"
 libgxps2_CONTENTS="usr/bin/cyggxps-2.dll"
+libgxps_devel_SUMMARY="${SUMMARY} (development)"
 libgxps_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/"
+girepository_GXPS0_1_SUMMARY="${SUMMARY} (GObject introspection)"
 girepository_GXPS0_1_CONTENTS="usr/*/gir*/GXPS-0.1.*"
 
 KEEP_LA_FILES="none"

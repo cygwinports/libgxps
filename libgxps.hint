@@ -1,5 +1,0 @@
-category: Gnome
-requires: libcairo2 libglib2.0_0 libgxps2 libjpeg8 libpng14
-sdesc: "GNOME OpenXPS library (converters)"
-ldesc: "libgxps is a GObject based library for handling and rendering XPS
-documents."

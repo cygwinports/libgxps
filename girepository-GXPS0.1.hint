@@ -1,6 +1,0 @@
-category: Gnome
-requires: libgxps2 girepository-cairo1.0 girepository-GLib2.0
-external-source: libgxps
-sdesc: "GNOME OpenXPS library (GObject Introspection data)"
-ldesc: "libgxps is a GObject based library for handling and rendering XPS
-documents."
