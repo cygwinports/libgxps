@@ -1,0 +1,10 @@
+--- origsrc/libgxps-0.2.2/tools/gxps-png-writer.c	2011-11-25 04:12:54.000000000 -0600
++++ src/libgxps-0.2.2/tools/gxps-png-writer.c	2015-01-04 12:29:23.246384500 -0600
+@@ -22,6 +22,7 @@
+ #include "gxps-png-writer.h"
+ #include <png.h>
+ #include <stdint.h>
++#include <string.h>
+ 
+ /* starting with libpng15, png.h no longer #includes zlib.h */
+ #ifndef Z_BEST_COMPRESSION

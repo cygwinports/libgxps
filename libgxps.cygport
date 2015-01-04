@@ -2,11 +2,13 @@ inherit gnome2
 
 NAME="libgxps"
 VERSION=0.2.2
-RELEASE=2
+RELEASE=3
 CATEGORY="Libs"
 SUMMARY="GNOME OpenXPS library"
 DESCRIPTION="libgxps is a GObject based library for handling and rendering XPS
 documents."
+
+PATCH_URI="0.2.2-compile.patch"
 
 DEPEND="gnome-common gtk-doc
 	pkgconfig(cairo)
